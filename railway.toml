@@ -1,6 +1,6 @@
 [build]
-builder = "NIXPACKS"
-buildCommand = "npm run build"
+builder = "docker"
+dockerfilePath = "Dockerfile"
 
 [deploy]
 startCommand = "npm start"
