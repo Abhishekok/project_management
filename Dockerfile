@@ -25,5 +25,8 @@ RUN cd frontend && npm run build
 # Expose port (if needed, backend usually on 5000 or similar)
 EXPOSE 5000
 
+# Set environment variables
+ENV NODE_ENV=production
+
 # Start command
 CMD ["npm", "start"]
