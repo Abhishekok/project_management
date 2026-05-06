@@ -22,7 +22,7 @@ app.use('/api/tasks', require('./routes/taskRoutes'));
 const path = require('path');
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../frontend/dist')));
-  app.get('*', (req, res) => {
+  app.get('/{*path}', (req, res) => {
     res.sendFile(path.resolve(__dirname, '../frontend/dist', 'index.html'));
   });
 }
