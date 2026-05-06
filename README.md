@@ -1,6 +1,6 @@
-# TaskFlow - Full-Stack Team Task Manager
+# Taski-Task_management
 
-A robust, modern Team Task Manager built with the MERN stack (MongoDB, Express, React, Node.js). 
+A robust, modern Team Task Manager made with (MongoDB, Express, React, Node.js). 
 
 ## Features
 - **Authentication**: Secure Signup and Login with JWT.
@@ -41,19 +41,3 @@ cd frontend
 npm install
 npm run dev
 ```
-
-## Deployment to Railway
-
-This repository is configured as a monorepo for easy deployment to [Railway](https://railway.app/).
-
-1. Push this repository to GitHub.
-2. Go to Railway and create a new project from your GitHub repository.
-3. In Railway Variables, add:
-   - `MONGO_URI` (your production database)
-   - `JWT_SECRET` (a random secure string)
-   - `NODE_ENV` = `production`
-4. The provided `railway.toml` and root `package.json` will automatically build the React frontend and start the Express server, which serves both the API and the static frontend files.
-
-## Project Structure
-- `backend/`: Express Server, Mongoose Models, Controllers, and RBAC Middleware.
-- `frontend/`: Vite React App with Context API for state management and Vanilla CSS for styling.
